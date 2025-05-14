@@ -12,7 +12,9 @@
 // Select the database to use.
 use('yaniravc');
 
-db.getCollection('sales').insertMany([
+db.getCollection('movies').drop();
+
+db.getCollection('movies').insertMany([
     {
         "movie_id": "UUID-1",
         "title": "The Shawshank Redemption",
